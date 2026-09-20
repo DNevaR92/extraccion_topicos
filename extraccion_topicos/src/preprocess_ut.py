@@ -1,6 +1,10 @@
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 tokenizer = RegexpTokenizer(r'\w+')
 STOPWORDS_ES = set(stopwords.words('spanish'))

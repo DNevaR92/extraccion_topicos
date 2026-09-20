@@ -1,6 +1,6 @@
 import joblib
 import os
-from preprocess_ut import apply_text_preprocess
+from preprocess_ut import apply_text_preprocess  # necesario para que joblib.load() resuelva la referencia
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELS_DIR = os.path.join(BASE_DIR, "resources", "models")
